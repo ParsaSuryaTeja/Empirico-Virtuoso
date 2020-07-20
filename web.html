@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Empirico Virtuoso Homepage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel = "icon" href =  "evm2.jpg"  type = "image/x-icon">
+<script>
+function validate1(){
+  var no =t1.value;
+  var e=t2.value;
+  var i;
+  var c=0;
+
+  if(e.includes("@") && e.includes(".com"))
+  {
+  for(i=0;i<no.length;i++){
+    var p =charCodeAt(no.charAt(i));
+    if(p<=57 && p>=48){
+          c=c+1;
+    }
+    else{
+      c=0;
+      break;
+    }
+  }
+  if(c==0){
+    window.alert("Enter Valid Mobile Number");
+   t1.value="";
+    t1.focus();
+    return false;
+  }
+ else{
+  return true;
+ }
+}
+else {
+  window.alert("Enter Valid Email id");
+ t2.value="";
+  t2.focus();
+  return false;
+}
+}
+
+</script>
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body >
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Clients & FAQS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
+</div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Clients & FAQS</a>
+
+
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="evm2.jpg" style="width:70%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="invest.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="slide3.jpeg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="slide4.jpeg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="slide5.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      </div>
+  </div>
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">Empirico Virtuoso</h2>
+    <p class="w3-opacity"><i>Your investment professional that helps to meet all your financial assistance with ease.</i></p>
+     <h1 style="vertical-align: baseline">WHO WE ARE </h1>
+    <p class="w3-justify">Empirico Virtuoso Ltd, established in 2020 has been providing trusted Investment and Wealth Management, Life Insurance  and specialized Retirement planning services that meet a wide range of corporate and personal needs to our clients in India . We are here to handle all of your investment management demands so you can focus on your core priorities in your business and life.</p>
+    <div class="w3-row w3-padding-32">
+      <div>
+
+
+       <h1 style="color:red">OUR SERVICES</h1>
+         <p class="w3-opacity"><i>EVERY CLIENT IS OUR PARTNER</i></p>
+        <h4 style="text-align:left"><b>INVESTMENT PLANNING AND ADVICE</b></h4>
+      <p> We offer portfolio of stocks to build your wealth. We give a good investment approach considering the quality returns.</p>
+      <h4 style="text-align:left" ><b>WEALTH CREATION AND MANAGEMENT</b></h4>
+    <p>Being wealthy requires your money should consistently work for you, hence we help our clients to make smart investments. We include practical investment strategies in private wealth management and financial planning, and research on behavioral finance and family office management.</p>
+      <h4 style="text-align:left" ><b>LIFE INSURANCE</b></h4>
+    <p>We secure your financial life with Life Insurance program. In this, a person pays premium, in return for a sum of money to be paid to them after a maturity.   </p>
+    <h4 style="text-align:left" ><b>HEALTH INSURANCE</b></h4>
+    <p> We secure your health when there are some medical uncertainities in your life. It is an insurance which covers medical expenses. All your medical bills can be claimed under this.</p>
+    <h4 style="text-align:left" ><b>RETIREMENT PLANNING</b></h4>
+    <p>Design your long vacation in a financially sound way.  We think that in all successful ventures, the foundation of a good retirement is planning</p>
+      </div>
+<div style="background-color:#45B8AC;" >
+     <h1 style="color:#5B5EA6">OUR MISSION</h1>
+        <p class="w3-opacity"><i>The one way your runway.</i></p>
+        <q><b>The major objective of the firm is growth and expanison with profit generation and wealth creation and management with the margin of safety and high quality returns. We crucially focus on Innovation Research and Development programmes. Our portfolio includes any business which looks very attractive for a purchase with sound value. We use more complex investment and management techniques. We use less leverages and borrowed funds. Our endeavor is to be the optimist in the fast growing alternatives sector and provide sustainable finance. We also proffer life insurance, medical insurance and exclusive retirement plans.</b></q>
+</div>
+</div>
+
+  <!-- The Tour Section -->
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center" Style="font-family:serif">Clients</h2>
+      <h3 style="text-align:left">TO OUR PARTNERS:<h3>
+      <ul class="w3-ul w3-border w3-white w3-text-grey">
+
+        <li class="w3-padding"><b>Term of the partnership:</b> The partnership is usually a fixed-life investment vehicle that istypically 10 years plus some number of extensions. </li>
+        <li class="w3-padding"><b>Distribution Waterfall :</b> The process by which the returned capital will be distributed to the investor, and allocated between Limited and General Partner. This waterfall includes the preferred return : a minimum rate of return (e.g. 8%) which must be achieved before the General Partner can receive any carried interest, and the Carried interest, the share of the profits paid the General Partner above the preferred return (e.g. 20%)</li>
+        <li class="w3-padding"><b>Transfer of an interest in the fund:</b> Funds are not intended to be transferred or traded; however, they can be transferred to another investor. Typically, such a transfer must receive the consent of and is at the discretion of the fund's manager. </li>
+        <li class="w3-padding"><b>Restrictions on the General Partner:</b> The fund's manager has significant discretion to make investments and control the affairs of the fund. However, the LLP does have certain restrictions and controls and is often limited in the type, size, or geographic focus of investments permitted, and how long the manager is permitted to make new investments. </li>
+        <li class="w3-padding"><b>Investment Stewardship fee:</b> An annual payment made by the investors in Empirico Virtuoso, LLP  to the fund's manager to pay for the  firm's investment operations (typically 4% to 6%) of the committed capital of the fund. </li>
+      </ul>
+
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <h2 class="w3-wide w3-center" Style="font-family:serif">FAQS</h2>
+
+        <h3 style="text-align:left">1.HOW WE INVEST OUR FUNDS?</h3>
+        <q style="text-align:center">We invest the pooled funds of retail investors in securities in line with the stated investment objectives. For a fee, the company/firm provides more diversification, liquidity, and professional management consulting service than is normally available to individual investors. </q>
+
+  <h3 style="text-align:left">2.WHEN TO INVEST? </h3>
+  <p> You can invest anywhere at anytime by connecting with our investment manager. The investment manager shall guide you from your first investment until you acquire the profits.</P>
+  <h3 style="text-align:left">3.WHERE AND WHOM TO GIVE YOUR FUNDS?</h3>
+<p>The investment manager is always responsible for your funds. He protects your funds from risk, inflation and other factors and would give a quality rate of return with safety principle. The funds can be withdrawn with the consent of the investment manager but they can not be withdrawn regularly. Your funds will safe with the investment manager.</P>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Join our rank of successful clients - Contact us today!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Vijayawada, Andhra Pradesh, India<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +917093743399<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: rithvik.kammili@gmail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="data2.php" target="_blank" onsubmit="return validate1()" method="post">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email" id="t2">
+            </div>
+            </div>
+          <input class="w3-input w3-border" type="text" placeholder="mobile number" required name="no" id="t1">
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit" name="send">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<!-- End Page Content -->
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+<p class="w3-opacity"><i>  We are here to provide our clients with personalized investment strategies. Contact us to see which of our services best meet your needs.T&C: Every investment involves risk*</i></p>
+<p class="w3-medium">developed by <a href="https://www.linkedin.com/in/surya-teja-30841016a/" target="_blank">surya</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 4000);
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
